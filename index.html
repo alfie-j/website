@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfie's Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="sidebar locked">
+      <div class="logo_items flex">
+        <span class="nav_image">
+          <img src="images/logo.png" alt="logo_img" />
+        </span>
+        <span class="logo_name">Alfie's Site</span>
+        <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
+        <i class="bx bx-x" id="sidebar-close"></i>
+      </div>
+
+      <div class="menu_container">
+        <div class="menu_items">
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Words</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="dictionary.html" class="link flex">
+                <i class='bx bxs-book-bookmark'></i>               
+                <span>Dictionary</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="scramble.html" class="link flex">
+                <i class='bx bx-shuffle'></i>
+                <span>Word Scramble</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Notes</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="drawing.html" class="link flex">
+                <i class='bx bx-palette'></i>
+                <span>Draw Pad</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="notes.html" class="link flex">
+                <i class='bx bxs-message-alt-add'></i>
+                <span>Notes</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="list.html" class="link flex">
+                <i class='bx bx-list-ul'></i>
+                <span>To-Do list</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Fun!</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="guess.html" class="link flex">
+                <i class='bx bx-question-mark'></i>
+                <span>Guess The Word</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="quotes.html" class="link flex">
+                <i class='bx bxs-quote-alt-left' ></i>
+                <span>Quotes</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="typing.html" class="link flex">
+                <i class='bx bxs-keyboard'></i>
+                <span>Typing Speed Test</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar_profile flex">
+          <span class="nav_image">
+            <img src="images/profile.jpg" alt="logo_img" />
+          </span>
+          <div class="data_text">
+            <span class="name">Alfie Jesson</span>
+            <span class="email">johna3@mpsabudhabi.com</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper">
+        <span class="jj">Just  <span class="multiText"></span></span>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+          strings  : ["Innovate.","Create.","Learn.","Master.","Understand.","Excel."],
+          loop : true,
+          typeSpeed : 100,
+          backSpeed : 80,
+          startDelay: 1000,
+          backDelay : 1500
+        })
+    </script>
+    <nav class="navbar flex">
+      <i class="bx bx-menu" id="sidebar-open"></i>
+      <input type="search" placeholder="Search..."  	onkeydown = "if (event.keyCode == 13)
+      window.location=this.value + '.html'"
+class="search_box" list="input"/>
+      <datalist id="input">
+        <option value="dictionary">dictionary</option>
+        <option value="drawing">drawing</option>
+        <option value="list">list</option>
+        <option value="notes">notes</option>
+        <option value="scramble">scramble</option>
+        <option value="guess">guess</option>
+        <option value="quotes">quotes</option>
+        <option value="typing">typing</option>
+      </datalist>
+      <span class="nav_image">
+        <img src="images/logo.png" alt="logo_img" />
+      </span>
+    </nav>
+  </body>
+</html>
